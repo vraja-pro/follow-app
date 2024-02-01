@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="WordPress Coding Standards for Aquila Features">
+<ruleset name="WordPress Coding Standards for Folo Up">
 
 	<rule ref="WordPress-Core">
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
@@ -15,7 +15,7 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="aquila-features"/>
+				<element value="folo-up"/>
 				<element value="default"/>
 			</property>
 		</properties>

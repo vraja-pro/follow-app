@@ -2,10 +2,10 @@
 /**
  * Patterns Class.
  *
- * @package aquila-features
+ * @package folo-up
  */
 
-namespace AquilaFeatures;
+namespace FoloUp;
 
 /**
  * Class Patterns.
@@ -37,17 +37,17 @@ class Patterns {
 		if ( function_exists( 'register_block_pattern' ) ) {
 
 			// Get the two column pattern content.
-			$two_columns_content = aquila_features_get_template( 'patterns/two-columns' );
+			$two_columns_content = folo_up_get_template( 'patterns/two-columns' );
 
 			/**
 			 * Register Two Column Pattern
 			 */
 			register_block_pattern(
-				'aquila-features/two-columns',
+				'folo-up/two-columns',
 				[
-					'title'       => __( 'Aquila Features Two Column', 'aquila-features' ),
-					'description' => __( 'Aquila Two Column Patterns', 'aquila-features' ),
-					'categories'  => [ 'aquila-columns' ],
+					'title'       => __( 'Folo Up Two Column', 'folo-up' ),
+					'description' => __( 'Foloup Two Column Patterns', 'folo-up' ),
+					'categories'  => [ 'foloup-columns' ],
 					'content'     => $two_columns_content,
 				]
 			);
@@ -55,14 +55,14 @@ class Patterns {
 			/**
 			 * Two Columns Secondary Pattern
 			 */
-			$two_columns_secondary_content = aquila_features_get_template( 'patterns/two-columns-secondary' );
+			$two_columns_secondary_content = folo_up_get_template( 'patterns/two-columns-secondary' );
 
 			register_block_pattern(
-				'aquila-features/two-columns-secondary',
+				'folo-up/two-columns-secondary',
 				[
-					'title'       => __( 'Aquila Two Columns Secondary', 'aquila-features' ),
-					'description' => __( 'Aquila Cover Block with image and text', 'aquila-features' ),
-					'categories'  => [ 'aquila-columns' ],
+					'title'       => __( 'Foloup Two Columns Secondary', 'folo-up' ),
+					'description' => __( 'Foloup Cover Block with image and text', 'folo-up' ),
+					'categories'  => [ 'foloup-columns' ],
 					'content'     => $two_columns_secondary_content,
 				]
 			);
@@ -75,7 +75,7 @@ class Patterns {
 	public function register_block_pattern_categories() {
 
 		$pattern_categories = [
-			'aquila-columns' => __( 'Aquila Features Columns', 'aquila-features' ),
+			'foloup-columns' => __( 'Folo Up Columns', 'folo-up' ),
 		];
 
 		if ( ! empty( $pattern_categories ) ) {

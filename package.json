@@ -1,7 +1,7 @@
 {
-	"name": "aquila-features",
+	"name": "folo-up",
 	"version": "1.0.0",
-	"description": "Aquila features plugin packages",
+	"description": "Folo Up plugin packages",
 	"main": "main.js",
 	"scripts": {
 		"prod": "cross-env NODE_ENV=production webpack --mode production --progress",

@@ -2,7 +2,7 @@
 /**
  * Two Columns Block Patterns Template
  *
- * @package aquila-features
+ * @package folo-up
  */
 
 ?>

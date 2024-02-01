@@ -1,5 +1,5 @@
 === Headless CMS ===
-Contributors: gsayed786
+Contributors: vrajadas
 Tags: gutenberg, block, patterns
 Requires at least: 4.6
 Tested up to: 6.0
@@ -13,7 +13,7 @@ A WordPress plugin that adds two column block patterns.
 == Description ==
 
 A WordPress plugin that adds block patterns for two columns with heading paragraph and call to action. There are two
-variations for two columns available under Aquila Features Columns Pattern Category.
+variations for two columns available under Folo Up Columns Pattern Category.
 
 == Features ==
 
@@ -27,7 +27,7 @@ This section describes how to install the plugin and get it working.
 - Upload the plugin files to the directory, or install the plugin through the WordPress plugins screen directly.
 - Activate the plugin through the ‘Plugins’ screen in WordPress
 - Your block patterns will be available to select from Dashboard > Click on the plus icon in the editor
-> Patterns > Aquila Features Columns.
+> Patterns > Folo Up Columns.
 
 == It's not working ==
 

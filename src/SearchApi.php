@@ -2,10 +2,10 @@
 /**
  * Assets Class.
  *
- * @package aquila-features
+ * @package folo-up
  */
 
-namespace AquilaFeatures;
+namespace FoloUp;
 
 use WP_REST_Server;
 use WP_REST_Request;

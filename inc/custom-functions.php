@@ -2,7 +2,7 @@
 /**
  * Custom Functions.
  *
- * @package Aquila Features.
+ * @package Folo Up.
  */
 
 /**
@@ -14,9 +14,9 @@
  *
  * @return string|void Template markup.
  */
-function aquila_features_get_template( string $template, array $variables = [], bool $echo = false ) {
+function folo_up_get_template( string $template, array $variables = [], bool $echo = false ) {
 
-	$template_file = sprintf( '%1$s/templates/%2$s.php', AQUILA_FEATURES_PLUGIN_PATH, $template );
+	$template_file = sprintf( '%1$s/templates/%2$s.php', FOLO_UP_PLUGIN_PATH, $template );
 
 	if ( ! file_exists( $template_file ) ) {
 		return '';
