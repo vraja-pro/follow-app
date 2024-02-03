@@ -26,10 +26,10 @@
 require_once 'vendor/autoload.php';
 require_once untrailingslashit( plugin_dir_path( __FILE__ ) ) . '/inc/custom-functions.php';
 
-use FoloUp\Plugin;
+use FoloUp\Folo_Up_Plugin;
 
-if ( class_exists( 'FoloUp\Plugin' ) ) {
-	$the_plugin = new Plugin();
+if ( class_exists( 'FoloUp\Folo_Up_Plugin' ) ) {
+	$the_plugin = new Folo_Up_Plugin();
 }
 
 register_activation_hook( __FILE__, [ $the_plugin, 'activate' ] );
