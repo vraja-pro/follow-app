@@ -60,7 +60,7 @@ class Folo_Up_Entries {
             'description'           => __( 'Folo up Entry ', 'folo-up' ),
             'labels'                => $labels,
             'supports'              => array( 'title', 'editor' ),
-            'taxonomies'            => array( 'category', 'post_tag' ),
+            'taxonomies'            => array( 'folo_form_category', 'post_tag' ),
             'hierarchical'          => false,
             'public'                => false,
             'show_ui'               => true,
