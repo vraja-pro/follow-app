@@ -45,6 +45,7 @@ class Folo_Up_Plugin {
 			Folo_Up_Entries::class,
 			Folo_Up_Gravity_Integration::class,
 			Folo_Up_Forms_Meta_Data::class,
+			Folo_Up_Entry_Comments::class,
 		];
 	}
 
