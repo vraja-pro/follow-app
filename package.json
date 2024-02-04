@@ -21,7 +21,7 @@
 		"wordpress",
 		"themes"
 	],
-	"author": "Imran Sayed",
+	"author": "Vraja Das",
 	"license": "MIT",
 	"private": true,
 	"devDependencies": {
