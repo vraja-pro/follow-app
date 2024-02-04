@@ -117,7 +117,7 @@ module.exports = ( env, argv ) => ({
 	
 	optimization: {
 		minimizer: [
-			new  new CssMinimizerPlugin(),
+			new CssMinimizerPlugin(),
 			new TerserPlugin(),
 		]
 	},
