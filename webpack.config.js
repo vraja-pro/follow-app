@@ -4,10 +4,9 @@
 
 const path = require( 'path' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
-const OptimizeCssAssetsPlugin = require( 'optimize-css-assets-webpack-plugin' );
-const cssnano = require( 'cssnano' ); // https://cssnano.co/
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
-const UglifyJsPlugin = require( 'uglifyjs-webpack-plugin' );
+const TerserPlugin = require('terser-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin'); // https://webpack.js.org/plugins/copy-webpack-plugin/
 const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );
 
@@ -118,15 +117,8 @@ module.exports = ( env, argv ) => ({
 	
 	optimization: {
 		minimizer: [
-			new OptimizeCssAssetsPlugin( {
-				cssProcessor: cssnano
-			} ),
-			
-			new UglifyJsPlugin( {
-				cache: false,
-				parallel: true,
-				sourceMap: false
-			} )
+			new  new CssMinimizerPlugin(),
+			new TerserPlugin(),
 		]
 	},
 	
